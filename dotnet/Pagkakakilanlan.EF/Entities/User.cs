@@ -42,6 +42,13 @@ sealed record User
         get => _emailAddresses ?? throw new UninitializedPropertyException(nameof(EmailAddresses));
         set => _emailAddresses = value;
     }
+
+    IEnumerable<UserStatusChangeActivity>? _statusChangeActivities;
+    public IEnumerable<UserStatusChangeActivity> StatusChangeActivities
+    {
+        get => _statusChangeActivities ?? throw new UninitializedPropertyException(nameof(StatusChangeActivities));
+        set => _statusChangeActivities = value;
+    }
 }
 
 sealed class UserETC : IEntityTypeConfiguration<User>
