@@ -35,6 +35,13 @@ sealed record User
         get => _mobileNumbers ?? throw new UninitializedPropertyException(nameof(MobileNumbers));
         set => _mobileNumbers = value;
     }
+
+    IEnumerable<UserEmailAddress>? _emailAddresses;
+    public IEnumerable<UserEmailAddress> EmailAddresses
+    {
+        get => _emailAddresses ?? throw new UninitializedPropertyException(nameof(EmailAddresses));
+        set => _emailAddresses = value;
+    }
 }
 
 sealed class UserETC : IEntityTypeConfiguration<User>
