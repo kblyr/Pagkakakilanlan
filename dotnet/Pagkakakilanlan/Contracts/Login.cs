@@ -1,5 +1,3 @@
-using System.Text.Json.Nodes;
-
 namespace Pagkakakilanlan;
 
 public static class Login
@@ -14,7 +12,6 @@ public static class Login
     {
         public required UserObj User { get; init; }
         public required AccessToken AccessToken { get; init; }
-        public JsonNode? Data { get; init; }
 
         public sealed record UserObj
         {
