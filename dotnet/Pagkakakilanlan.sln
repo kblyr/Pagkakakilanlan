@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pagkakakilanlan.EF", "Pagka
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pagkakakilanlan.WebAPI", "Pagkakakilanlan.WebAPI\Pagkakakilanlan.WebAPI.csproj", "{3D446ADE-964D-4A6E-BDBE-20D69C60D71A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pagkakakilanlan.WebAPI.Server", "Pagkakakilanlan.WebAPI.Server\Pagkakakilanlan.WebAPI.Server.csproj", "{C6EA84B2-D0C5-4F77-8BE3-BF23F1702715}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{3D446ADE-964D-4A6E-BDBE-20D69C60D71A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D446ADE-964D-4A6E-BDBE-20D69C60D71A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D446ADE-964D-4A6E-BDBE-20D69C60D71A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6EA84B2-D0C5-4F77-8BE3-BF23F1702715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6EA84B2-D0C5-4F77-8BE3-BF23F1702715}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6EA84B2-D0C5-4F77-8BE3-BF23F1702715}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6EA84B2-D0C5-4F77-8BE3-BF23F1702715}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

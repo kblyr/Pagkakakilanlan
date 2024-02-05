@@ -2,7 +2,7 @@ namespace Pagkakakilanlan;
 
 public static class User_Add
 {
-    public sealed record Request : ICQRSRequest
+    public sealed record Request : ICQRSRequest, IUserFullNameSource
     {
         public required string Username { get; init; }
         public required string Password { get; init; }

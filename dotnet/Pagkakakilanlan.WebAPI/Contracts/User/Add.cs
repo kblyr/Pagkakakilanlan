@@ -10,6 +10,7 @@ public static class User_AddAPI
         public string LastName { get; init; } = "";
     }
 
+    [SchemaId(SchemaIds.User.Add)]
     public sealed record Response : IAPIResponse
     {
         public required string Id { get; init; }
