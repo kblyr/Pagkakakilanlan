@@ -8,6 +8,9 @@ sealed class Mapping : IRegister
             .NewConfig<PasswordEncryptionFailed, PasswordEncryptionFailedAPI>()
         ;
 
+        config.ForType<User_ActivateAPI, User_Activate>()
+            .Map(dest => dest.Id, src => HashIdConverterInstance.Instance.ToInt32(src.Id));
+
         config.ForType<User_Add.Response, User_AddAPI.Response>()
             .Map(dest => dest.Id, src => HashIdConverterInstance.Instance.FromInt32(src.Id));
     }
