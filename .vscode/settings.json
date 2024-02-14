@@ -8,5 +8,7 @@
   "prettier.vueIndentScriptAndStyle": true,
   "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
   "dotnet.defaultSolution": "dotnet/Pagkakakilanlan.sln",
-  "vue3snippets.enable-compile-vue-file-on-did-save-code": false
+  "vue3snippets.enable-compile-vue-file-on-did-save-code": false,
+  "css.customData": [".vscode/tailwind.json"],
+  "vue.lint.unknownAtRules": "ignore"
 }
